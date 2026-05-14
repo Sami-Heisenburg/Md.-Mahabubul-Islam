@@ -1,0 +1,139 @@
+import { motion } from 'motion/react';
+import { Target, Lightbulb, TrendingUp, ShieldCheck, Zap, Heart, LayoutGrid, Cpu, Globe } from 'lucide-react';
+import { GlassCard } from '../components/GlassCard';
+
+export const About = () => {
+  return (
+    <main className="pt-32 pb-20 px-6 relative overflow-hidden">
+      {/* Background Decor */}
+      <div className="absolute top-0 left-0 w-full h-[50vh] bg-grid opacity-20 pointer-events-none" />
+      <div className="absolute top-[20%] right-[-10%] w-[500px] h-[500px] bg-brand-purple/10 blur-[120px] rounded-full pointer-events-none" />
+
+      <div className="max-w-7xl mx-auto relative z-10">
+        {/* About Hero */}
+        <div className="text-center max-w-4xl mx-auto mb-28">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="space-y-6"
+          >
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-cyan/10 text-brand-cyan text-[10px] font-black uppercase tracking-[0.4em] mb-4">
+              <Cpu size={12} /> Hardware for the Digital Age
+            </div>
+            <h1 className="text-6xl md:text-9xl font-display font-black tracking-tighter leading-[0.85]">
+              Architecting <br /><span className="text-gradient">The Future.</span>
+            </h1>
+            <p className="text-xl md:text-2xl text-slate-500 dark:text-slate-400 leading-relaxed font-medium">
+              We are a collective of engineers, designers, and strategists obsessed with the physics of high-conversion digital systems.
+            </p>
+          </motion.div>
+        </div>
+
+        {/* Story Section */}
+        <div className="grid lg:grid-cols-2 gap-24 items-center mb-40">
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="space-y-10"
+          >
+            <div className="space-y-6">
+              <h2 className="text-5xl font-display font-black tracking-tight">Our <span className="text-gradient">Origins</span></h2>
+              <p className="text-slate-500 dark:text-slate-400 text-lg leading-relaxed font-medium">
+                Tech Tonic was forged at the collision point of Silicon Valley innovation and European aesthetic precision. We recognized that the digital world was becoming crowded with "good enough" solutions, and we chose a different path.
+              </p>
+              <p className="text-slate-500 dark:text-slate-400 text-lg leading-relaxed font-medium">
+                We treat every project like a mission-critical deployment. Whether it's a SaaS interface or a global ad campaign, we apply the same level of rigorous stress-testing and architectural integrity.
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 p-8 rounded-[2rem] bg-slate-50 dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 relative overflow-hidden">
+               <div className="absolute inset-0 bg-grid opacity-5" />
+               <div className="relative z-10">
+                 <h4 className="text-4xl font-display font-black text-brand-cyan">150+</h4>
+                 <p className="text-[10px] text-slate-500 uppercase tracking-widest font-black pt-2">System Deployed</p>
+               </div>
+               <div className="relative z-10">
+                 <h4 className="text-4xl font-display font-black text-brand-purple">98%</h4>
+                 <p className="text-[10px] text-slate-500 uppercase tracking-widest font-black pt-2">Uptime Logic</p>
+               </div>
+               <div className="relative z-10">
+                 <h4 className="text-4xl font-display font-black text-brand-cyan">45%</h4>
+                 <p className="text-[10px] text-slate-500 uppercase tracking-widest font-black pt-2">Avg. ROI Delta</p>
+               </div>
+            </div>
+          </motion.div>
+          
+          <div className="relative perspective-distant preserve-3d">
+            <motion.div 
+               initial={{ rotateY: 15, rotateX: 5 }}
+               animate={{ rotateY: 0, rotateX: 0 }}
+               transition={{ duration: 1.5, ease: "easeOut" }}
+               className="aspect-square rounded-[4rem] overflow-hidden glass p-4 shadow-2xl relative z-10"
+            >
+              <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800" alt="Agency Office" className="w-full h-full object-cover rounded-[3rem] grayscale hover:grayscale-0 transition-all duration-1000" />
+            </motion.div>
+            
+            <motion.div 
+               animate={{ y: [0, -15, 0] }}
+               transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+               className="absolute -bottom-12 -left-12 z-20"
+            >
+              <GlassCard className="p-8 rounded-[2.5rem] max-w-sm border-brand-cyan/30 shadow-2xl shadow-brand-cyan/20" tiltScale={0.5}>
+                <Target className="text-brand-cyan mb-6" size={40} />
+                <p className="font-display font-black text-lg italic leading-tight text-slate-800 dark:text-white">
+                  "Our core function is to bridge complex logic with intuitive human growth."
+                </p>
+              </GlassCard>
+            </motion.div>
+
+            <div className="absolute -top-12 -right-12 w-64 h-64 bg-brand-purple/20 blur-[100px] rounded-full -z-10" />
+          </div>
+        </div>
+
+        {/* Vision & Mission */}
+        <div className="grid md:grid-cols-2 gap-12 mb-40">
+            <GlassCard className="group border-white/5 hover:border-brand-cyan/40 transition-all duration-700" tiltScale={0.8}>
+                <div className="w-20 h-20 rounded-3xl bg-brand-cyan/10 flex items-center justify-center text-brand-cyan mb-10 group-hover:scale-110 group-hover:rotate-6 transition-transform duration-500">
+                  <Lightbulb size={40} />
+                </div>
+                <h3 className="text-4xl font-display font-black mb-6 tracking-tight">The Vision</h3>
+                <p className="text-slate-500 dark:text-slate-400 leading-relaxed text-xl font-medium">To establish the definitive protocol for creative technology—where every digital touchpoint is an engineered masterpiece of design and profitability.</p>
+            </GlassCard>
+            <GlassCard className="group border-white/5 hover:border-brand-purple/40 transition-all duration-700" tiltScale={0.8}>
+                <div className="w-20 h-20 rounded-3xl bg-brand-purple/10 flex items-center justify-center text-brand-purple mb-10 group-hover:scale-110 group-hover:-rotate-6 transition-transform duration-500">
+                  <Zap size={40} />
+                </div>
+                <h3 className="text-4xl font-display font-black mb-6 tracking-tight">The Mission</h3>
+                <p className="text-slate-500 dark:text-slate-400 leading-relaxed text-xl font-medium">To empower entrepreneurs and enterprises with high-conversion websites, breakthrough marketing strategies, and scalable software that automates success.</p>
+            </GlassCard>
+        </div>
+
+        {/* Core Protocol */}
+        <div className="text-center mb-20">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-100 dark:bg-white/5 text-slate-500 dark:text-slate-400 text-[10px] font-black uppercase tracking-[0.4em] mb-6">
+              <Globe size={12} /> Global Standards
+            </div>
+            <h2 className="text-5xl md:text-7xl font-display font-black mb-6 tracking-tighter">Our Core <span className="text-gradient">Protocol</span></h2>
+            <p className="text-slate-500 dark:text-slate-400 max-w-xl mx-auto text-lg font-medium">The fundamental constants that drive our engineering lifecycle.</p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-12">
+            {[
+                { title: 'Excellence Protocol', desc: 'Binary outcomes only. We do not ship "good enough". Every component is stress-tested for premium performance.', icon: ShieldCheck },
+                { title: 'Data Synthesis', desc: 'Aesthetics are validated by logic. We use deep telemetry to fuel our design decisions, ensuring predictable ROI.', icon: TrendingUp },
+                { title: 'Absolute Integrity', desc: 'Radical transparency at every layer. No black boxes. Just clear communication and verifiable results.', icon: Heart }
+            ].map((value, i) => (
+                <GlassCard key={i} className="text-center group border-white/5" tiltScale={0.5}>
+                    <div className="w-20 h-20 rounded-[2rem] bg-slate-900 border border-white/10 mx-auto flex items-center justify-center text-brand-cyan mb-8 group-hover:bg-brand-cyan group-hover:text-white transition-all duration-500">
+                        <value.icon size={32} />
+                    </div>
+                    <h4 className="text-2xl font-display font-black mb-4 tracking-tight">{value.title}</h4>
+                    <p className="text-slate-500 dark:text-slate-400 font-medium leading-relaxed">{value.desc}</p>
+                </GlassCard>
+            ))}
+        </div>
+      </div>
+    </main>
+  );
+};
