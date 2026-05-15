@@ -6,11 +6,11 @@ import { cn } from '../lib/utils';
 import { Magnetic } from './Magnetic';
 
 const navLinks = [
-  { name: 'Core', href: '/' },
-  { name: 'Philosophy', href: '/about' },
-  { name: 'Modules', href: '/services' },
-  { name: 'Deployments', href: '/projects' },
-  { name: 'Terminal', href: '/contact' },
+  { name: 'Home', href: '/' },
+  { name: 'About', href: '/about' },
+  { name: 'Services', href: '/services' },
+  { name: 'Projects', href: '/projects' },
+  { name: 'Contact', href: '/contact' },
 ];
 
 export const Header = () => {
@@ -35,16 +35,15 @@ export const Header = () => {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3 group">
-          <div className="w-11 h-11 rounded-2xl bg-linear-to-br from-brand-cyan to-brand-purple flex items-center justify-center text-white p-[1px] shadow-lg shadow-brand-cyan/20 group-hover:scale-110 transition-all duration-500 overflow-hidden">
-            <div className="w-full h-full bg-slate-900 rounded-2xl flex items-center justify-center font-black text-xl italic tracking-tighter">
+          <div className="w-10 h-10 rounded-xl bg-linear-to-br from-brand-cyan to-brand-purple flex items-center justify-center text-white p-[2px] shadow-lg shadow-brand-cyan/20 group-hover:scale-110 transition-all duration-500 overflow-hidden">
+            <div className="w-full h-full bg-slate-900 rounded-xl flex items-center justify-center font-display font-bold text-lg tracking-tighter">
               T
             </div>
           </div>
           <div className="flex flex-col leading-none">
-            <span className="font-display font-black text-xl tracking-tighter uppercase">
+            <span className="font-display font-bold text-xl tracking-tight">
               Tech Tonic
             </span>
-            <span className="text-[10px] font-black tracking-[0.4em] text-brand-cyan uppercase pt-1">Engineering</span>
           </div>
         </Link>
 
@@ -56,7 +55,7 @@ export const Header = () => {
                 key={link.name}
                 to={link.href}
                 className={cn(
-                  'text-xs font-black uppercase tracking-[0.2em] transition-all hover:text-brand-cyan relative py-1 hover:tracking-[0.3em]',
+                  'text-[13px] font-medium transition-all hover:text-brand-cyan relative py-1',
                   location.pathname === link.href ? 'text-brand-cyan' : 'text-slate-600 dark:text-slate-400'
                 )}
               >
@@ -74,9 +73,9 @@ export const Header = () => {
           <Magnetic strength={0.3}>
             <Link
               to="/contact"
-              className="px-8 py-3.5 rounded-2xl bg-linear-to-r from-brand-cyan to-brand-purple text-white font-black text-xs uppercase tracking-widest hover:shadow-[0_15px_40px_rgba(0,242,255,0.4)] transition-all flex items-center gap-2 group active:scale-90"
+              className="px-8 py-3 rounded-xl bg-linear-to-r from-brand-cyan to-brand-purple text-white font-bold text-sm hover:shadow-[0_15px_30px_rgba(0,242,255,0.3)] transition-all flex items-center gap-2 group active:scale-95"
             >
-              Initialize <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+              Get Started <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
             </Link>
           </Magnetic>
         </nav>

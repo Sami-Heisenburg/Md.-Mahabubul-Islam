@@ -40,13 +40,13 @@ export const Contact = () => {
             className="space-y-6"
           >
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-cyan/10 text-brand-cyan text-[10px] font-black uppercase tracking-[0.4em] mb-4">
-              <TerminalIcon size={12} /> Contact established
+               Contact Us
             </div>
             <h1 className="text-6xl md:text-9xl font-display font-black tracking-tighter leading-[0.85]">
-              Initialize <br /><span className="text-gradient">Project.</span>
+              Start A <br /><span className="text-gradient">Project.</span>
             </h1>
             <p className="text-xl md:text-2xl text-slate-500 dark:text-slate-400 leading-relaxed font-medium">
-              Establish a secure uplink with our engineering team to discuss your digital architecture.
+              Ready to take your business to the next level? Connect with our team to discuss your goals.
             </p>
           </motion.div>
         </div>
@@ -54,14 +54,14 @@ export const Contact = () => {
         <div className="grid lg:grid-cols-3 gap-12 relative">
           <div className="lg:col-span-1 space-y-8">
             <GlassCard className="h-fit border-white/10 hover:border-brand-cyan/40 shadow-2xl transition-all duration-700 p-10" tiltScale={0.8}>
-               <h3 className="text-3xl font-display font-black mb-8 tracking-tight">Comms Link</h3>
+               <h3 className="text-3xl font-display font-black mb-8 tracking-tight">Contact Info</h3>
               <div className="space-y-8">
                 <div className="flex items-start gap-5 group">
                   <div className="w-14 h-14 rounded-2xl bg-brand-cyan/10 flex items-center justify-center text-brand-cyan shrink-0 group-hover:bg-brand-cyan group-hover:text-white transition-all duration-500">
                     <Mail size={24} />
                   </div>
                   <div>
-                    <h4 className="font-black text-xs uppercase tracking-widest text-slate-400 mb-1">Secure Email</h4>
+                    <h4 className="font-black text-xs uppercase tracking-widest text-slate-400 mb-1">Email Us</h4>
                     <p className="text-lg font-bold">hello@techtonic.com</p>
                   </div>
                 </div>
@@ -70,7 +70,7 @@ export const Contact = () => {
                     <Phone size={24} />
                   </div>
                   <div>
-                    <h4 className="font-black text-xs uppercase tracking-widest text-slate-400 mb-1">Voice Link</h4>
+                    <h4 className="font-black text-xs uppercase tracking-widest text-slate-400 mb-1">Call Us</h4>
                     <p className="text-lg font-bold">+1 (234) 567-890</p>
                   </div>
                 </div>
@@ -79,7 +79,7 @@ export const Contact = () => {
                     <MapPin size={24} />
                   </div>
                   <div>
-                    <h4 className="font-black text-xs uppercase tracking-widest text-slate-400 mb-1">Base Location</h4>
+                    <h4 className="font-black text-xs uppercase tracking-widest text-slate-400 mb-1">Visit Us</h4>
                     <p className="text-lg font-bold">Silicon Valley, CA</p>
                   </div>
                 </div>
@@ -114,14 +114,14 @@ export const Contact = () => {
                 <div className="w-full h-full flex flex-col items-center justify-center p-12 text-center bg-slate-900 overflow-hidden">
                    <div className="absolute inset-0 bg-grid opacity-10" />
                    <MapPin className="text-brand-cyan mb-6 opacity-50 relative z-10" size={64} />
-                   <h4 className="font-display font-black text-white text-xl mb-3 relative z-10">Neural Map Restricted</h4>
-                   <p className="text-sm text-slate-400 mb-8 relative z-10 font-medium">Add GOOGLE_MAPS_PLATFORM_KEY to Secrets to calibrate our global node location.</p>
+                   <h4 className="font-display font-black text-white text-xl mb-3 relative z-10">Our Location</h4>
+                   <p className="text-sm text-slate-400 mb-8 relative z-10 font-medium">Add GOOGLE_MAPS_PLATFORM_KEY to Secrets to view our interactive office location.</p>
                    <a 
                      href="https://console.cloud.google.com/google/maps-apis/start?utm_campaign=gmp-code-assist-ais" 
                      target="_blank" 
                      className="text-xs font-black uppercase tracking-[0.2em] text-brand-cyan underline flex items-center gap-2 relative z-10 hover:text-white transition-colors"
                    >
-                     Get Key <ExternalLink size={14} />
+                     Get Map Key <ExternalLink size={14} />
                    </a>
                 </div>
               )}
@@ -140,10 +140,10 @@ export const Contact = () => {
                     <div className="w-24 h-24 rounded-3xl bg-brand-cyan/20 flex items-center justify-center text-brand-cyan mb-8 animate-pulse">
                       <Send size={48} />
                     </div>
-                    <h3 className="text-5xl font-display font-black mb-4 tracking-tight">Signal Received</h3>
-                    <p className="text-slate-400 text-xl font-medium max-w-md">Our engineering collective has received your transmission. Response window: 24h.</p>
-                    <button onClick={() => setFormStatus('idle')} className="mt-12 px-10 py-4 rounded-2xl glass hover:bg-white/10 font-black uppercase tracking-[0.2em] text-sm italic">
-                      New Uplink
+                    <h3 className="text-5xl font-display font-black mb-4 tracking-tight">Message Received</h3>
+                    <p className="text-slate-400 text-xl font-medium max-w-md">Our team has received your message. We typically respond within 24 hours.</p>
+                    <button onClick={() => setFormStatus('idle')} className="mt-12 px-10 py-4 font-bold text-brand-cyan border border-brand-cyan/20 rounded-xl hover:bg-brand-cyan/5">
+                      Send Another Message
                     </button>
                   </motion.div>
                 ) : (
@@ -155,29 +155,29 @@ export const Contact = () => {
                   >
                     <div className="grid md:grid-cols-2 gap-8">
                       <div className="space-y-2">
-                         <label className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-500 ml-1">Identity Name</label>
+                         <label className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-500 ml-1">Full Name</label>
                          <input required type="text" placeholder="John Doe" className="w-full px-6 py-5 rounded-2xl bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 outline-none focus:border-brand-cyan focus:ring-4 focus:ring-brand-cyan/5 transition-all font-medium text-lg" />
                       </div>
                       <div className="space-y-2">
-                         <label className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-500 ml-1">Secure Email</label>
+                         <label className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-500 ml-1">Email Address</label>
                          <input required type="email" placeholder="john@company.com" className="w-full px-6 py-5 rounded-2xl bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 outline-none focus:border-brand-cyan focus:ring-4 focus:ring-brand-cyan/5 transition-all font-medium text-lg" />
                       </div>
                     </div>
                     <CustomSelect 
-                      label="Target Module"
-                      placeholder="Select Architectural Focus"
+                      label="Inquiry Type"
+                      placeholder="Select a Service"
                       options={services}
                       value={selectedService}
                       onChange={setSelectedService}
                     />
                     <div className="space-y-2">
-                       <label className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-500 ml-1">Signal Message</label>
-                       <textarea required rows={6} placeholder="Describe the business logic or growth requirements..." className="w-full px-6 py-5 rounded-2xl bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 outline-none focus:border-brand-cyan focus:ring-4 focus:ring-brand-cyan/5 transition-all font-medium text-lg" />
+                       <label className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-500 ml-1">Message</label>
+                       <textarea required rows={6} placeholder="Tell us about your project or inquiry..." className="w-full px-6 py-5 rounded-2xl bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 outline-none focus:border-brand-cyan focus:ring-4 focus:ring-brand-cyan/5 transition-all font-medium text-lg" />
                     </div>
                     
                     <Magnetic strength={0.2}>
                       <button className="w-full py-6 rounded-3xl bg-linear-to-r from-brand-cyan to-brand-purple text-white font-black text-xl uppercase tracking-[0.1em] hover:shadow-[0_20px_50px_rgba(0,242,255,0.4)] transition-all active:scale-95 flex items-center justify-center gap-3 group">
-                        Initialize Transmission <ArrowRight size={24} className="group-hover:translate-x-2 transition-transform" />
+                        Submit Inquiry <ArrowRight size={24} className="group-hover:translate-x-2 transition-transform" />
                       </button>
                     </Magnetic>
                   </motion.form>

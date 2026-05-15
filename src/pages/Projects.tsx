@@ -4,12 +4,12 @@ import { GlassCard } from '../components/GlassCard';
 import { ExternalLink, Filter, Cpu, Layers, Globe, Zap, ArrowRight } from 'lucide-react';
 
 const projects = [
-  { id: 1, title: 'Quantum CRM', category: 'SaaS', desc: 'Enterprise-grade neural CRM with real-time data orchestration.', img: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800' },
-  { id: 2, title: 'Vanguard OS', category: 'Website', desc: 'Proprietary storefront architecture with sub-second LCP.', img: 'https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=800' },
-  { id: 3, title: 'Nexus Growth', category: 'Marketing', desc: 'Algorithmic scale strategy for deep-tech industrial startups.', img: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800' },
-  { id: 4, title: 'Solaris Ads', category: 'Facebook Ads', desc: 'High-precision ROAS modeling for renewable energy grids.', img: 'https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&q=80&w=800' },
-  { id: 5, title: 'Apex Dashboard', category: 'SaaS', desc: 'High-density telemetry visualization for cloud infrastructure.', img: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800' },
-  { id: 6, title: 'Luxe Domain', category: 'Website', desc: 'Premium architectural portal featuring 3D spatial tours.', img: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800' }
+  { id: 1, title: 'Quantum CRM', category: 'SaaS', desc: 'Comprehensive enterprise CRM with real-time data integration.', img: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800' },
+  { id: 2, title: 'Vanguard Store', category: 'Website', desc: 'High-performance ecommerce architecture with optimized load times.', img: 'https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=800' },
+  { id: 3, title: 'Nexus Growth', category: 'Marketing', desc: 'Strategic market expansion for technology-focused organizations.', img: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800' },
+  { id: 4, title: 'Solaris Ads', category: 'Facebook Ads', desc: 'High-ROI advertising campaigns for renewable energy initiatives.', img: 'https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&q=80&w=800' },
+  { id: 5, title: 'Apex Dashboard', category: 'SaaS', desc: 'Advanced data visualization for cloud-based infrastructure.', img: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800' },
+  { id: 6, title: 'Luxe Real Estate', category: 'Website', desc: 'Premium real estate portal featuring interactive virtual tours.', img: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800' }
 ];
 
 export const Projects = () => {
@@ -28,12 +28,12 @@ export const Projects = () => {
                         className="max-w-3xl space-y-6"
                     >
                         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-cyan/10 text-brand-cyan text-[10px] font-black uppercase tracking-[0.4em]">
-                           <Layers size={12} /> Deployment Archive
+                           <Layers size={12} /> Our Portfolio
                         </div>
                         <h1 className="text-6xl md:text-8xl font-display font-black tracking-tighter leading-none">
-                          The <span className="text-gradient">Portfolio</span> Grid.
+                          Featured <span className="text-gradient">Projects.</span>
                         </h1>
-                        <p className="text-xl md:text-2xl text-slate-500 dark:text-slate-400 font-medium">Explore our history of precision-engineered digital deployments.</p>
+                        <p className="text-xl md:text-2xl text-slate-500 dark:text-slate-400 font-medium">Explore our history of delivering professional digital solutions.</p>
                     </motion.div>
                     
                     <div className="flex flex-wrap gap-3 pb-2">
@@ -81,10 +81,10 @@ export const Projects = () => {
                                         
                                         <div className="pt-4 border-t border-white/5 flex items-center justify-between">
                                           <button className="font-black text-xs uppercase tracking-[0.2em] text-brand-cyan flex items-center gap-3 group/btn hover:gap-5 transition-all">
-                                              System Documentation <ArrowRight size={16} />
+                                              View Project <ArrowRight size={16} />
                                           </button>
                                           <div className="text-slate-700 dark:text-slate-600">
-                                            <Cpu size={16} className="group-hover:text-brand-cyan transition-colors" />
+                                            <Zap size={16} className="group-hover:text-brand-cyan transition-colors" />
                                           </div>
                                         </div>
                                     </div>

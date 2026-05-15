@@ -5,30 +5,30 @@ import { Link } from 'react-router-dom';
 
 const services = [
   {
-    title: 'Architectural Web',
+    title: 'Web Development',
     icon: Code,
-    desc: 'Deeply engineered ecommerce systems, custom ERPs, and high-performance landing modules.',
+    desc: 'Bespoke ecommerce systems, administrative portals, and high-performance lead generation modules.',
     href: '/services/web-development',
     tech: ['React', 'Next.js', 'Node.js']
   },
   {
-    title: 'Growth Logic',
+    title: 'Digital Marketing',
     icon: Megaphone,
-    desc: 'Aggressive brand positioning and algorithmic marketing strategies for market dominance.',
+    desc: 'Strategic brand positioning and performance-based marketing designed for rapid market expansion.',
     href: '/services/digital-marketing',
     tech: ['Google Ads', 'SEO', 'Email']
   },
   {
-    title: 'Meta Ad Precision',
+    title: 'Paid Acquisition',
     icon: BarChart3,
-    desc: 'High-yield paid acquisition systems with complex event tracking and real-time optimization.',
+    desc: 'Optimized advertising systems with advanced conversion tracking and real-time ROI measurement.',
     href: '/services/facebook-ads',
-    tech: ['CAPI', 'Retargeting', 'Creative']
+    tech: ['Meta Ads', 'CAPI', 'Retargeting']
   },
   {
-    title: 'SaaS Metallurgy',
+    title: 'Custom Software',
     icon: Database,
-    desc: 'Building the skeleton of your business with custom dashboards and cloud-native automation.',
+    desc: 'Scalable business dashboards and cloud-native automation designed to streamline operations.',
     href: '/services/saas-products',
     tech: ['AWS', 'Firebase', 'APIs']
   }
@@ -46,13 +46,13 @@ export const Services = () => (
            className="space-y-6"
         >
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-cyan/10 text-brand-cyan text-[10px] font-black uppercase tracking-[0.4em] mb-4">
-            <Cpu size={12} /> Modular Systems
+            <Cpu size={12} /> Our Expertise
           </div>
           <h1 className="text-6xl md:text-9xl font-display font-black tracking-tighter leading-[0.85]">
-            Our <br /><span className="text-gradient">Capabilities.</span>
+            Our <br /><span className="text-gradient">Services.</span>
           </h1>
           <p className="text-xl md:text-2xl text-slate-500 dark:text-slate-400 leading-relaxed font-medium">
-            We provide the digital infrastructure required to engineer success at scale.
+            We provide the strategic digital infrastructure required to drive measurable results.
           </p>
         </motion.div>
       </div>
@@ -74,7 +74,7 @@ export const Services = () => (
               </div>
 
               <Link to={s.href} className="inline-flex items-center gap-3 text-sm font-black uppercase tracking-[0.2em] text-brand-cyan hover:gap-6 transition-all group-hover:text-brand-purple">
-                Explore Module <ArrowRight size={20} />
+                Explore Service <ArrowRight size={20} />
               </Link>
             </GlassCard>
           </motion.div>
@@ -87,13 +87,13 @@ export const Services = () => (
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-brand-cyan/10 blur-[120px] rounded-full" />
         
         <div className="relative z-10 px-8 md:px-20 text-center">
-          <h2 className="text-5xl md:text-7xl font-display font-black text-white tracking-tighter mb-20 whitespace-normal">The <span className="text-gradient">Engineering</span> Advantage</h2>
+          <h2 className="text-5xl md:text-7xl font-display font-black text-white tracking-tighter mb-20 whitespace-normal">The <span className="text-gradient">Professional</span> Advantage</h2>
           
           <div className="grid md:grid-cols-3 gap-16">
               {[
-                  { title: 'Telemetry-Focused', icon: BarChart3, text: 'We use real-time telemetry and data streams to drive design decisions.' },
-                  { title: 'Global Grid', icon: Globe, text: 'Scale your business infrastructure to international edge nodes.' },
-                  { title: 'Rapid Deployment', icon: Zap, text: 'From blueprint to global launch in optimized sprint cycles.' }
+                  { title: 'Data-Driven', icon: BarChart3, text: 'We use real-time analytics and market intelligence to drive design decisions.' },
+                  { title: 'International Scale', icon: Globe, text: 'Building infrastructure designed for global deployment and performance.' },
+                  { title: 'Strategic Execution', icon: Zap, text: 'Fast-paced development cycles with a primary focus on ROI.' }
               ].map((b, i) => (
                   <div key={i} className="text-center group">
                       <div className="w-20 h-20 mx-auto bg-white/5 rounded-[2rem] flex items-center justify-center text-brand-purple mb-8 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">

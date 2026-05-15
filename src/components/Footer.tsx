@@ -7,11 +7,13 @@ export const Footer = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
         {/* Brand */}
         <div className="space-y-6">
-          <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-xl bg-linear-to-br from-brand-cyan to-brand-purple flex items-center justify-center text-white font-bold text-xl">
-              T
+          <Link to="/" className="flex items-center gap-3 group">
+            <div className="w-10 h-10 rounded-xl bg-linear-to-br from-brand-cyan to-brand-purple flex items-center justify-center text-white p-[2px] shadow-lg shadow-brand-cyan/20 group-hover:scale-110 transition-all duration-500 overflow-hidden">
+              <div className="w-full h-full bg-slate-900 rounded-xl flex items-center justify-center font-display font-bold text-lg tracking-tighter text-white">
+                T
+              </div>
             </div>
-            <span className="font-display font-bold text-xl">Tech Tonic</span>
+            <span className="font-display font-bold text-xl tracking-tight">Tech Tonic</span>
           </Link>
           <p className="text-slate-500 dark:text-slate-400 leading-relaxed">
             Leading creative technology agency helping businesses build strong online presence and drive scalable growth.

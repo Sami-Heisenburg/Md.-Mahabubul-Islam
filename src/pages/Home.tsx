@@ -63,13 +63,13 @@ export const Home = () => {
                 to="/contact"
                 className="px-12 py-6 rounded-2xl bg-linear-to-r from-brand-cyan to-brand-purple text-white font-black text-xl flex items-center justify-center gap-3 group hover:shadow-[0_20px_60px_rgba(0,242,255,0.5)] transition-all transform hover:-translate-y-1 active:scale-95"
               >
-                Start Engineering <ArrowRight size={24} className="group-hover:translate-x-2 transition-transform" />
+                Start Your Project <ArrowRight size={24} className="group-hover:translate-x-2 transition-transform" />
               </Link>
               <Link
                 to="/services"
                 className="px-12 py-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl font-black text-xl text-center hover:bg-white/10 transition-all dark:text-white group flex items-center justify-center gap-2"
               >
-                Our Stack <Zap size={20} className="text-brand-cyan group-hover:scale-125 transition-transform" />
+                Our Services <Zap size={20} className="text-brand-cyan group-hover:scale-125 transition-transform" />
               </Link>
             </div>
           </motion.div>
@@ -85,29 +85,29 @@ export const Home = () => {
                 <div className="w-12 h-12 rounded-xl bg-brand-cyan/10 flex items-center justify-center text-brand-cyan mb-6">
                   <Code size={24} />
                 </div>
-                <h3 className="font-black text-lg mb-2">Web OS</h3>
-                <p className="text-xs text-slate-400 font-medium">Proprietary performance architecture</p>
+                <h3 className="font-black text-lg mb-2">Web Systems</h3>
+                <p className="text-xs text-slate-400 font-medium">Modern performance architecture</p>
               </GlassCard>
               <GlassCard tiltScale={1.2} className="translate-x-4">
                 <div className="w-12 h-12 rounded-xl bg-brand-purple/10 flex items-center justify-center text-brand-purple mb-6">
                   <Megaphone size={24} />
                 </div>
-                <h3 className="font-black text-lg mb-2">Ad Engine</h3>
-                <p className="text-xs text-slate-400 font-medium">Algorithmic growth systems</p>
+                <h3 className="font-black text-lg mb-2">Growth Strategy</h3>
+                <p className="text-xs text-slate-400 font-medium">Strategic marketing systems</p>
               </GlassCard>
               <GlassCard tiltScale={1.3} className="translate-y-8 -translate-x-4">
                 <div className="w-12 h-12 rounded-xl bg-brand-cyan/10 flex items-center justify-center text-brand-cyan mb-6">
                   <Database size={24} />
                 </div>
-                <h3 className="font-black text-lg mb-2">SaaS Core</h3>
-                <p className="text-xs text-slate-400 font-medium">Scalable cloud ecosystems</p>
+                <h3 className="font-black text-lg mb-2">SaaS Solutions</h3>
+                <p className="text-xs text-slate-400 font-medium">Scalable cloud platforms</p>
               </GlassCard>
               <GlassCard tiltScale={1.4} className="-translate-y-12">
                 <div className="w-12 h-12 rounded-xl bg-brand-purple/10 flex items-center justify-center text-brand-purple mb-6">
                   <BarChart3 size={24} />
                 </div>
-                <h3 className="font-black text-lg mb-2">Data Hub</h3>
-                <p className="text-xs text-slate-400 font-medium">Conversion-first intelligence</p>
+                <h3 className="font-black text-lg mb-2">Insights Hub</h3>
+                <p className="text-xs text-slate-400 font-medium">Conversion-first analytics</p>
               </GlassCard>
             </div>
             
@@ -177,13 +177,13 @@ export const Home = () => {
             className="space-y-4"
           >
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-cyan/10 text-brand-cyan text-[10px] font-black uppercase tracking-[0.4em]">
-              <Layers size={12} /> Full-Stack Ecosystem
+              <Layers size={12} /> Our Capabilities
             </div>
             <h2 className="text-5xl md:text-7xl font-display font-black tracking-tighter">
-              The <span className="text-gradient">Tech Tonic</span> Stack
+              Standard <span className="text-gradient">Services</span>
             </h2>
             <p className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto text-lg font-medium">
-              We leverage the most advanced digital architectural tools to build your legacy.
+              We leverage advanced digital tools to build high-converting platforms.
             </p>
           </motion.div>
         </div>
@@ -258,16 +258,16 @@ export const Home = () => {
         
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center mb-24">
-            <h2 className="text-5xl md:text-7xl font-display font-black text-white tracking-tighter mb-6">Our Engineering <span className="text-gradient">Process</span></h2>
-            <p className="text-slate-400 max-w-xl mx-auto text-lg font-medium">From initial concept to global scale, we map your trajectory with surgical precision.</p>
+            <h2 className="text-5xl md:text-7xl font-display font-black text-white tracking-tighter mb-6">Our Development <span className="text-gradient">Process</span></h2>
+            <p className="text-slate-400 max-w-xl mx-auto text-lg font-medium">From initial strategy to final launch, we guide you through every step.</p>
           </div>
 
           <div className="grid md:grid-cols-4 gap-12">
             {[
-              { step: '01', title: 'Blueprint', desc: 'Deep-dive discovery and architectural mapping.' },
-              { step: '02', title: 'Prototype', desc: 'Rapid development and high-fidelity modeling.' },
-              { step: '03', title: 'Refine', desc: 'Performance tuning and stress-testing logic.' },
-              { step: '04', title: 'Launch', desc: 'Global deployment and live growth tracking.' }
+              { step: '01', title: 'Strategy', desc: 'Discovery and in-depth business mapping.' },
+              { step: '02', title: 'Design', desc: 'Creative UI and user-experience modeling.' },
+              { step: '03', title: 'Develop', desc: 'Performance-tuned engineering and testing.' },
+              { step: '04', title: 'Go-Live', desc: 'Global deployment and performance tracking.' }
             ].map((p, i) => (
               <motion.div
                 key={p.step}

@@ -18,13 +18,13 @@ export const About = () => {
             className="space-y-6"
           >
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-cyan/10 text-brand-cyan text-[10px] font-black uppercase tracking-[0.4em] mb-4">
-              <Cpu size={12} /> Hardware for the Digital Age
+              <Cpu size={12} /> Innovation for the Digital Age
             </div>
             <h1 className="text-6xl md:text-9xl font-display font-black tracking-tighter leading-[0.85]">
-              Architecting <br /><span className="text-gradient">The Future.</span>
+              Building <br /><span className="text-gradient">The Future.</span>
             </h1>
             <p className="text-xl md:text-2xl text-slate-500 dark:text-slate-400 leading-relaxed font-medium">
-              We are a collective of engineers, designers, and strategists obsessed with the physics of high-conversion digital systems.
+              We are a collective of strategists, designers, and developers dedicated to building high-performance digital ecosystems.
             </p>
           </motion.div>
         </div>
@@ -38,12 +38,12 @@ export const About = () => {
             className="space-y-10"
           >
             <div className="space-y-6">
-              <h2 className="text-5xl font-display font-black tracking-tight">Our <span className="text-gradient">Origins</span></h2>
+              <h2 className="text-5xl font-display font-black tracking-tight">Our <span className="text-gradient">Story</span></h2>
               <p className="text-slate-500 dark:text-slate-400 text-lg leading-relaxed font-medium">
-                Tech Tonic was forged at the collision point of Silicon Valley innovation and European aesthetic precision. We recognized that the digital world was becoming crowded with "good enough" solutions, and we chose a different path.
+                Tech Tonic was established at the intersection of creative innovation and technical precision. We recognized that the digital world was becoming crowded with standard solutions, and we chose to offer something more.
               </p>
               <p className="text-slate-500 dark:text-slate-400 text-lg leading-relaxed font-medium">
-                We treat every project like a mission-critical deployment. Whether it's a SaaS interface or a global ad campaign, we apply the same level of rigorous stress-testing and architectural integrity.
+                We treat every project as a critical business asset. Whether it is a custom dashboard or a global marketing campaign, we apply rigorous testing and strategic integrity to ensure success.
               </p>
             </div>
             
@@ -51,15 +51,15 @@ export const About = () => {
                <div className="absolute inset-0 bg-grid opacity-5" />
                <div className="relative z-10">
                  <h4 className="text-4xl font-display font-black text-brand-cyan">150+</h4>
-                 <p className="text-[10px] text-slate-500 uppercase tracking-widest font-black pt-2">System Deployed</p>
+                 <p className="text-[10px] text-slate-500 uppercase tracking-widest font-black pt-2">Projects Deployed</p>
                </div>
                <div className="relative z-10">
-                 <h4 className="text-4xl font-display font-black text-brand-purple">98%</h4>
-                 <p className="text-[10px] text-slate-500 uppercase tracking-widest font-black pt-2">Uptime Logic</p>
+                 <h4 className="text-4xl font-display font-black text-brand-purple">99%</h4>
+                 <p className="text-[10px] text-slate-500 uppercase tracking-widest font-black pt-2">Client Success</p>
                </div>
                <div className="relative z-10">
                  <h4 className="text-4xl font-display font-black text-brand-cyan">45%</h4>
-                 <p className="text-[10px] text-slate-500 uppercase tracking-widest font-black pt-2">Avg. ROI Delta</p>
+                 <p className="text-[10px] text-slate-500 uppercase tracking-widest font-black pt-2">Avg. Growth Delta</p>
                </div>
             </div>
           </motion.div>
@@ -82,7 +82,7 @@ export const About = () => {
               <GlassCard className="p-8 rounded-[2.5rem] max-w-sm border-brand-cyan/30 shadow-2xl shadow-brand-cyan/20" tiltScale={0.5}>
                 <Target className="text-brand-cyan mb-6" size={40} />
                 <p className="font-display font-black text-lg italic leading-tight text-slate-800 dark:text-white">
-                  "Our core function is to bridge complex logic with intuitive human growth."
+                  "Our core mission is to bridge complex technology with intuitive business growth."
                 </p>
               </GlassCard>
             </motion.div>
@@ -109,20 +109,20 @@ export const About = () => {
             </GlassCard>
         </div>
 
-        {/* Core Protocol */}
+        {/* Core Values */}
         <div className="text-center mb-20">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-100 dark:bg-white/5 text-slate-500 dark:text-slate-400 text-[10px] font-black uppercase tracking-[0.4em] mb-6">
               <Globe size={12} /> Global Standards
             </div>
-            <h2 className="text-5xl md:text-7xl font-display font-black mb-6 tracking-tighter">Our Core <span className="text-gradient">Protocol</span></h2>
-            <p className="text-slate-500 dark:text-slate-400 max-w-xl mx-auto text-lg font-medium">The fundamental constants that drive our engineering lifecycle.</p>
+            <h2 className="text-5xl md:text-7xl font-display font-black mb-6 tracking-tighter">Our Core <span className="text-gradient">Values</span></h2>
+            <p className="text-slate-500 dark:text-slate-400 max-w-xl mx-auto text-lg font-medium">The fundamental constants that drive our business success.</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-12">
             {[
-                { title: 'Excellence Protocol', desc: 'Binary outcomes only. We do not ship "good enough". Every component is stress-tested for premium performance.', icon: ShieldCheck },
-                { title: 'Data Synthesis', desc: 'Aesthetics are validated by logic. We use deep telemetry to fuel our design decisions, ensuring predictable ROI.', icon: TrendingUp },
-                { title: 'Absolute Integrity', desc: 'Radical transparency at every layer. No black boxes. Just clear communication and verifiable results.', icon: Heart }
+                { title: 'Commitment to Excellence', desc: 'Predictable results only. We do not deliver anything less than exceptional. Every component is tested for absolute performance.', icon: ShieldCheck },
+                { title: 'Data-Driven Strategy', desc: 'Aesthetics are validated by logic. We use deep analytics to guide our design decisions, ensuring measurable ROI.', icon: TrendingUp },
+                { title: 'Full Transparency', desc: 'Open communication at every layer. No hidden complexities. Just clear strategy and verifiable results.', icon: Heart }
             ].map((value, i) => (
                 <GlassCard key={i} className="text-center group border-white/5" tiltScale={0.5}>
                     <div className="w-20 h-20 rounded-[2rem] bg-slate-900 border border-white/10 mx-auto flex items-center justify-center text-brand-cyan mb-8 group-hover:bg-brand-cyan group-hover:text-white transition-all duration-500">
