@@ -36,8 +36,8 @@ export const Header = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3 group">
           <div className="w-10 h-10 rounded-xl bg-linear-to-br from-brand-cyan to-brand-purple flex items-center justify-center text-white p-[2px] shadow-lg shadow-brand-cyan/20 group-hover:scale-110 transition-all duration-500 overflow-hidden">
-            <div className="w-full h-full bg-slate-900 rounded-xl flex items-center justify-center font-display font-bold text-lg tracking-tighter">
-              T
+            <div className="w-full h-full bg-slate-900 rounded-xl flex items-center justify-center text-brand-cyan">
+              <Cpu size={20} className="group-hover:rotate-12 transition-transform duration-500" />
             </div>
           </div>
           <div className="flex flex-col leading-none">

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Twitter, Cpu } from 'lucide-react';
 
 export const Footer = () => {
   return (
@@ -9,8 +9,8 @@ export const Footer = () => {
         <div className="space-y-6">
           <Link to="/" className="flex items-center gap-3 group">
             <div className="w-10 h-10 rounded-xl bg-linear-to-br from-brand-cyan to-brand-purple flex items-center justify-center text-white p-[2px] shadow-lg shadow-brand-cyan/20 group-hover:scale-110 transition-all duration-500 overflow-hidden">
-              <div className="w-full h-full bg-slate-900 rounded-xl flex items-center justify-center font-display font-bold text-lg tracking-tighter text-white">
-                T
+              <div className="w-full h-full bg-slate-900 rounded-xl flex items-center justify-center text-brand-cyan">
+                <Cpu size={20} className="group-hover:rotate-12 transition-transform duration-500" />
               </div>
             </div>
             <span className="font-display font-bold text-xl tracking-tight">Tech Tonic</span>

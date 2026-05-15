@@ -10,10 +10,10 @@ const API_KEY = process.env.GOOGLE_MAPS_PLATFORM_KEY || '';
 const hasValidKey = Boolean(API_KEY) && API_KEY !== 'YOUR_API_KEY';
 
 const services = [
-  { value: 'web', label: 'Web Engineering', icon: <Code size={18} /> },
-  { value: 'marketing', label: 'Growth Logic', icon: <Globe size={18} /> },
-  { value: 'ads', label: 'Meta Ad Precision', icon: <BarChart3 size={18} /> },
-  { value: 'saas', label: 'SaaS Metallurgy', icon: <Database size={18} /> },
+  { value: 'web', label: 'Web Development', icon: <Code size={18} /> },
+  { value: 'marketing', label: 'Digital Marketing', icon: <Globe size={18} /> },
+  { value: 'ads', label: 'Paid Acquisition', icon: <BarChart3 size={18} /> },
+  { value: 'saas', label: 'SaaS Solutions', icon: <Database size={18} /> },
 ];
 
 export const Contact = () => {

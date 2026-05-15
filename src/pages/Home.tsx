@@ -197,7 +197,7 @@ export const Home = () => {
               href: '/services/web-development' 
             },
             { 
-              title: 'Growth Engineering', 
+              title: 'Growth Strategy', 
               desc: 'Strategic brand positioning and multi-channel marketing designed to capture market share.', 
               icon: Megaphone,
               href: '/services/digital-marketing' 
